@@ -637,7 +637,7 @@ jobs:
 
       - name: Set up terraform
         if: steps.e2etest-ec2-1.outputs.cache-hit != 'true'
-        uses: hashicorp/setup-terraform@v1
+        uses: hashicorp/setup-terraform@v2.0.0
 
       - name: Check out testing framework
         if: steps.e2etest-ec2-1.outputs.cache-hit != 'true'
@@ -717,7 +717,7 @@ jobs:
 
       - name: Set up terraform
         if: steps.e2etest-ec2-2.outputs.cache-hit != 'true'
-        uses: hashicorp/setup-terraform@v1
+        uses: hashicorp/setup-terraform@v2.0.0
 
       - name: Check out testing framework
         if: steps.e2etest-ec2-2.outputs.cache-hit != 'true'
@@ -797,7 +797,7 @@ jobs:
 
       - name: Set up terraform
         if: steps.e2etest-ec2-3.outputs.cache-hit != 'true'
-        uses: hashicorp/setup-terraform@v1
+        uses: hashicorp/setup-terraform@v2.0.0
 
       - name: Check out testing framework
         if: steps.e2etest-ec2-3.outputs.cache-hit != 'true'
@@ -877,7 +877,7 @@ jobs:
 
       - name: Set up terraform
         if: steps.e2etest-ecs.outputs.cache-hit != 'true'
-        uses: hashicorp/setup-terraform@v1
+        uses: hashicorp/setup-terraform@v2.0.0
 
       - name: Check out testing framework
         if: steps.e2etest-ecs.outputs.cache-hit != 'true'
@@ -950,7 +950,7 @@ jobs:
 
       - name: Set up terraform
         if: steps.e2etest-eks.outputs.cache-hit != 'true'
-        uses: hashicorp/setup-terraform@v1
+        uses: hashicorp/setup-terraform@v2.0.0
 
       - name: Check out testing framework
         if: steps.e2etest-eks.outputs.cache-hit != 'true'
@@ -1012,7 +1012,7 @@ jobs:
 
       - name: Set up terraform
         if: steps.e2etest-eks-arm64.outputs.cache-hit != 'true'
-        uses: hashicorp/setup-terraform@v1
+        uses: hashicorp/setup-terraform@v2.0.0
 
       - name: Check out testing framework
         if: steps.e2etest-eks-arm64.outputs.cache-hit != 'true'
@@ -1075,7 +1075,7 @@ jobs:
 
       - name: Set up terraform
         if: steps.e2etest-eks-fargate.outputs.cache-hit != 'true'
-        uses: hashicorp/setup-terraform@v1
+        uses: hashicorp/setup-terraform@v2.0.0
 
       - name: Check out testing framework
         if: steps.e2etest-eks-fargate.outputs.cache-hit != 'true'
@@ -1151,7 +1151,7 @@ jobs:
 
       - name: Set up terraform
         if: steps.e2etest-eks-adot-operator.outputs.cache-hit != 'true'
-        uses: hashicorp/setup-terraform@v1
+        uses: hashicorp/setup-terraform@v2.0.0
 
       - name: Check out testing framework
         if: steps.e2etest-eks-adot-operator.outputs.cache-hit != 'true'

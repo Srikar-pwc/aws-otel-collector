@@ -77,7 +77,7 @@ jobs:
 
       - name: Set up terraform
         if: steps.e2etest-eks-arm64.outputs.cache-hit != 'true'
-        uses: hashicorp/setup-terraform@v1
+        uses: hashicorp/setup-terraform@v2.0.0
 
       - name: Check out testing framework
         if: steps.e2etest-eks-arm64.outputs.cache-hit != 'true'
